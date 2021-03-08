@@ -4,7 +4,6 @@ function sendMail(params){
 	var nombre = document.getElementById("toName").value
 	var correo = document.getElementById("fromName").value
 	var nombre_correo = nombre + "<" + correo + ">"
-	var aprobado = 0;
 
 		var tempParams = {
 			from_name: nombre_correo,
@@ -13,6 +12,6 @@ function sendMail(params){
 		};
 		emailjs.send('service_8gd6ewn','template_h8vz54j',tempParams)
 		.then(function(res){
-			console.log("success", res.status);
+			console.log("enviado", res.status);
 		})
 }
