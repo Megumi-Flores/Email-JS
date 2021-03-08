@@ -4,7 +4,7 @@ function sendMail(params){
 	var nombre = document.getElementById("toName").value
 	var correo = document.getElementById("fromName").value
 	var nombre_correo = nombre + "<" + correo + ">"
-
+		//agrupando mensages
 		var tempParams = {
 			from_name: nombre_correo,
 			to_name: receptor,
